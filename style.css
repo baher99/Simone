@@ -1,0 +1,937 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home
+{
+    height: 100vh;
+    background-image: url(img/intro-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.layer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(10,10,10, .8);
+}
+.layer-cont h3
+{
+    font-size: 30px;
+}
+.layer-cont h1
+{
+    font-size: 4rem;
+    padding: 20px 0px;
+}
+.layer-cont p
+{
+    font-size: 20;
+    padding-bottom: 10px;
+}
+.layer-cont button
+{
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: solid 2px #20c997;
+    border-radius: 25px;
+    color: #20c997;
+    background-color: transparent;
+    font-size: 18px;
+    transition: color  .5s , background-color 1s;
+
+}
+.layer-cont button:hover
+{
+    color: #fff;
+    background-color: #20c997;
+}
+
+.side-icon
+{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    background-color: #212529;
+    border-radius: 5px;
+}
+.side-icon i
+{
+    position: relative;
+    top: 30%;
+}
+
+.nav
+{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color:transparent;
+    position: fixed;
+    z-index: 999999;
+    background-color:black;
+}
+.nav-img
+{
+    position: absolute;
+    left: 20px;
+}
+.nav ul li
+{
+margin: 0px 10px;
+}
+.nav ul a
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color .5s;
+}
+.nav ul a:hover
+{
+    color: #20c997;
+}
+
+
+.nav ul
+{
+    display: flex ;
+    list-style: none;
+
+}
+.arrow
+{
+    position: absolute;
+    bottom: 100px;
+    font-size: large;
+    animation-name: arrow-down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes arrow-down {
+    0%{ bottom: 100px;}
+    100%{bottom: 80px;}
+    
+}
+@media screen and (max-width:600px) {
+    .layer-cont h1
+    {
+        font-size: 40px;
+    }
+    .nav ul 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width:601px) and (max-width:992px)  {
+    .nav
+    {
+        display: flex;
+
+    }
+    .nav-img
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav ul 
+    {
+        margin-top: 40px;
+    }
+}
+.section-2
+{
+    margin: 50px 0px;
+
+}
+.know
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;;
+    padding-bottom: 50px 0px;
+    position: relative;
+    box-shadow: 10px black;
+}
+.row
+{
+    width: 80px;
+    height: 3px;
+    background-color: #20c997;
+    position: absolute;
+    left: 47%;
+    top: 50px;
+}
+.about-me
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+
+}
+.info1
+{
+    width: 60%;
+    padding: 0px 50px;
+}
+.info1 h3
+{
+    font-size: 1.75rem
+}
+.info1 span
+{
+    color: #20c997;
+}
+.info2
+{
+    
+    width: 40%;
+}
+.about-me p
+{
+    line-height: 1.8;
+    font-size: 18px;
+    color: #4c4d4d;
+    margin-top: 10px;
+
+}
+.info2 ul
+{
+    list-style: none;
+}
+.info2 ul li
+{
+    font-size: 18px;
+    margin: 10px 0px;
+}
+.info2 ul li span
+{
+    color: #4c4d4d;
+    font-family: 'Poppins', sans-serif;
+
+}
+.info2 ul li a
+{
+    text-decoration: none;
+    color: #20c997;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+.info2 ul hr
+{
+    color: #4c4d4d;
+}
+
+.info2 button
+{
+    margin-top: 10px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #20c997;
+    color: #fff;
+    transition: background-color 1s ;
+}
+.info2 button:hover
+{
+    background-color: #1baa80;
+}
+.counter
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.count
+{
+    position: relative;
+
+}
+.count h2
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: #6c757d
+}
+.count p
+{
+    font-size: 18px;
+}
+.count1::after
+{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background-color: #fff;
+    border-left: 1px dashed #e0dede;
+    top: 0px;
+    left:200px;
+}
+.count2::after
+{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background-color: #fff;
+    border-left: 1px dashed #e0dede;
+    top: 0px;
+    left:200px;
+}
+.count3::after
+{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background-color: #fff;
+    border-left: 1px dashed #e0dede;
+    top: 0px;
+    left:200px;
+}
+@media screen and (max-width:600px) {
+    .about-me
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .info1
+    {
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .info2
+    {
+        width: 100%;
+    }
+    .counter
+    {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        left: 20px;
+        width: 100%;
+    }
+    .count
+    {
+        width: 50%;
+    }
+    
+}
+@media screen and(min-width:601) and (max-width:992px) {
+    .about-me
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .info1
+    {
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .info2
+    {
+        width: 100%;
+    }
+    
+}
+.section-3
+{
+    background-color: #f8f9fa;
+    margin-top: 50px;
+}
+.section-3 h2
+{
+    text-align: center;
+    padding-top: 30px;
+    margin: 30px 0px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+}
+.whatido
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.jobs
+{
+    position: relative;
+    display: flex;
+    width: 35%;
+    margin: 30px 0px;
+    padding: 0px 30px;
+}
+.jobs i
+{
+    font-size: 25px;
+    margin: 0px 10px;
+    color: #20c997;
+
+    z-index: 1;
+}
+.jobs::before
+{
+    content: '';
+    width: 70px;
+    height: 60px;
+    background-color:#fff;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+}
+
+.note 
+{
+    padding: 0px 10px;
+}
+.note h3
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    color: #252b33;
+}
+.note p
+{
+    color: #4c4d4d;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+.line
+{
+    width: 80px;
+    height: 3px;
+    background-color: #20c997;
+    position: relative;
+    top: -30px;
+    left: 47%;
+}
+@media screen and (max-width:768px) {
+    .jobs
+    {
+        width: 100%;
+    }
+    
+}
+
+.resume
+{
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #212529;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+}
+.line
+{
+    margin-bottom: 40px;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-1
+{
+    width: 40%;
+    margin-right: 50px;
+}
+.container-1 h2
+{
+    color: #252b33;
+    font-size: 25px;
+}
+.container-2
+{
+    width: 40%;
+}
+.container-2 h2
+{
+    color: #252b33;
+    font-size: 25px;
+}
+.education
+{
+    border: 1px solid #4c4d4d;
+    margin: 30px 0px;
+    border-radius: 4px;
+    padding: 0px 20px;
+}
+.experience
+{
+    border: 1px solid #4c4d4d;
+    margin: 30px 0px;
+    border-radius: 4px;
+    padding: 0px 20px;
+}
+.education h5
+{
+    width: 20%;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 4px;
+    background-color: #20c997;
+    font-size: 0.875rem;
+    margin: 20px 0px;
+}
+.education h3
+{
+    color: #252b33;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.education span
+{
+    color: #dc3545 ;
+    font-size: 19px;
+}
+.education p
+{
+    color: #6c757d;
+    font-family: "Poppins", sans-serif;
+    margin : 10px 0px;
+}
+.experience h5
+{
+    width: 20%;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 4px;
+    background-color: #20c997;
+    font-size: 0.875rem;
+    margin: 20px 0px;
+}
+.experience h3
+{
+    color: #252b33;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.experience span
+{
+    color: #dc3545;
+    font-size: 19px;
+}
+.experience p
+{
+    color: #6c757d;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0px;
+
+}
+.skills h2
+{
+    position: relative;
+    left: 10%;
+    font-size: 1.50rem;
+    color: #252b33;
+}
+.progress
+{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.progress-1
+{
+    width: 40%;
+    margin: 20px 0px;
+}
+.progress-2
+{
+    width: 40%;
+    margin: 20px 0px;
+}
+.progress progress
+{
+    border-radius: 5px;
+    height: 5px;
+    background-color:black;
+    margin: 20px 0px;
+    width: 90%;
+}
+.progress label
+{
+    color: #212529!important;
+    margin: 20px 0px;
+    font-family: "Poppins", sans-serif;
+}
+.btn
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn button
+{
+    font-size: 19px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: #6c757d solid 2px;
+    color: #20c997;
+    transition: background-color 1s , color 1s;
+
+}
+.btn button:hover
+{
+    background-color: #6c757d;
+    color: #fff;
+}
+@media screen and (max-width:768px) {
+    .container-1
+    {
+        width: 100%;
+    }
+    .container-2
+    {
+        width: 100%;
+    }
+    .education
+    {
+        width: 100%;
+    }
+    .experience
+    {
+        width: 100%;
+    }
+    .progress
+    {
+        width: 100%;
+    }
+    .progress-2
+    {
+        width: 90%;
+    }
+}
+.section-5
+{
+    padding-top: 50px;
+    margin: 50px 0px;
+    background-color: #f8f9fa
+}
+.work
+{
+    padding-top: 50px;
+    text-align: center;
+}
+.work h2
+{
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #212529;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+}
+.links
+{
+    display: flex;
+    justify-content: center;
+}
+.links a
+{
+    font-size: 18px;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: #7b8084;
+    transition: color 1s ;
+}
+.links a:hover
+{
+    color: #20c997;
+}
+.imgs-container
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+.group
+{
+    width: 25%;
+    margin: 0px 20px;
+}
+.caption
+{
+    position: relative;
+    overflow: hidden;
+}
+.photo
+{
+    position: relative;
+    width: 100%;
+}
+.photo img
+{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.img-caption
+{
+    background-color: rgba(0, 0, 0,.7);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.img-caption:hover
+{
+    opacity: 1;
+}
+@media screen and (max-width:992px) {
+    .group
+    {
+        width: 80%;
+    }
+    .caption
+    {
+        width: 100%;
+    }
+    
+}
+.section-6
+{
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.client h2
+{
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #212529;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+}
+.client-speak 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.client-feed
+{
+    width: 40%;
+    padding: 0px 30px;
+    background-color: #f8f9fa
+}
+.client-info
+{
+    display: flex;
+    margin: 30px 0px;
+}
+.client-info img
+{
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+.client-info .user
+{
+    margin: 10px 0px;
+}
+.user span
+{
+    color: #6c757d
+}
+.user h4
+{
+    color: #212529;
+    font-family: "Poppins", sans-serif;
+
+}
+.client-feed p
+{
+    color: #212529;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+@media screen and (max-width:992px) {
+    .client-speak
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .client-feed
+    {
+        width: 100%;
+    }
+}
+.section-7
+{
+    background-color: #f8f9fa!important;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.contact h2
+{
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #212529;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+}
+.get-in
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.adress
+{
+    width: 20%;
+}
+.adress p
+{
+    margin: 10px 0px;
+    font-family: "Poppins", sans-serif;
+    color: #4c4d4d;
+}
+.adress h3
+{
+    color: #252b33;
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+}
+.send-note
+{
+    width: 60%;
+}
+.send-note h3
+{
+    color: #252b33;
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+}
+.send-note input
+{
+    width: 45%;
+    height: 45px;
+    margin: 20px 0px;
+    border: #6c757d solid 1px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+}
+.send-note textarea
+{
+    border: #6c757d solid 1px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+
+}
+.send-note button
+{
+    position: relative;
+    left: 40%;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+
+    margin:20px 0px ; 
+    color: #fff;
+    background-color: #20c997;
+    transition: background-color 1s;
+}
+.send-note button:hover
+{
+    background-color: #1baa80;
+}
+@media screen and (max-width:992px) {
+    .get-in
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .adress
+    {
+        width: 80%;
+    }
+    .send-note
+    {
+        width: 80%;
+    }
+    .send-note textarea
+    {
+        width: 90%;
+    }
+}
+
+.footer
+{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer p
+{
+    color: #252b33;
+    font-size: 17px;
+}
+.footer span
+{
+    color: #20c997;
+    transition: color 1s;
+}
+.footer span:hover
+{
+    color: #1baa80;
+}
+.terms a
+{
+    text-decoration: none;
+    color: #252b33; 
+    font-size: 17px;
+    margin: 0px 10px;
+    transition: color 1s;
+}
+.terms a:hover
+{
+    color: #20c997;
+}
